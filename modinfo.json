@@ -2,7 +2,7 @@
     "type": "MOD_INFO",
     "mod-type": "SUPPLEMENTAL",
     "ident": "yk_stats_through_skills",
-    "name": "StatsThoughSkillsII_yk",
+    "name": "StatsThroughSkillsII_yk",
     "author": "Yue Kaburagi",
     "description": "StatsThroughSkillsIIの勝手改造版です。キャラクターメイク時のステータスはそのままに、ボーナスが乗る形で成長します。",
     "category": "rebalance",
