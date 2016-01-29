@@ -6,7 +6,8 @@ StatsThroughSkillsIIの勝手改造版です
 能力値は技能系統のレベルの合計値によって変化します。参照する技能数の関係で筋肉はやや不遇ですが、そんなことをものともしない強さが筋肉には備わっていると信じています。  
 ##対応バージョン
 - 0.C-4253
-main.lua内部の`MOD.supportedVersion`が正しい情報です。
+
+README.mdが更新されていないときはmain.lua内部の`MOD.supportedVersion`が正しい情報です。
 
 ##難易度調整
 main.lua内部の
