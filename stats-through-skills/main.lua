@@ -1,22 +1,26 @@
 --Increasing stats by skill
 local MOD = {
-    supportedVersion = "cdda0.C-4253",
+    supportVersion = "cdda0.C-4274",
     str_skills = {"carpentry", "mechanics", "swimming", "bashing", "melee", "throw"},
     dex_skills = {"driving", "survival", "tailor", "traps", "dodge", "stabbing", "unarmed"},
     int_skills = {"barter", "computer", "cooking", "electronics", "fabrication", "firstaid", "speech"},
     per_skills = {"archery", "gun", "launcher", "pistol", "rifle", "shotgun", "smg"},
+    on_day_passed = function() re_calc() end,
+    on_new_player_created = function() re_calc() end,
+    on_skill_increased = function() re_calc() end,
     base_weight = 4
 }
 
 mods["yk_stats_through_skills"] = MOD
 
-function MOD.on_day_passed()
+function re_calc()
     game.add_msg("Calculating new stats based off skills")
 
     setStatBonus(efftype_id("exp_str"), calculateStatBonus(MOD.str_skills, MOD.base_weight), "Str")
     setStatBonus(efftype_id("exp_dex"), calculateStatBonus(MOD.dex_skills, MOD.base_weight), "Dex")
     setStatBonus(efftype_id("exp_int"), calculateStatBonus(MOD.int_skills, MOD.base_weight), "Int")
     setStatBonus(efftype_id("exp_per"), calculateStatBonus(MOD.per_skills, MOD.base_weight), "Per")
+    player:recalc_hp()
 end
 
 function calculateStatBonus(aSkills, iBase)
