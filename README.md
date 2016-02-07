@@ -1,4 +1,4 @@
-##stats-through-skills
+#stats-through-skills
 StatsThroughSkillsの勝手改造版です  
 キャラクターメイク時のステータスはそのままに、ボーナスが乗る形で成長します。  
 
@@ -22,7 +22,7 @@ local MOD = {
 ```
 の数字を重くすると成長が遅く、軽くすると成長が速くなります。(0以上の整数)
 
-##with-arcana
+#with-arcana
 ArcanaMODが入っている場合に動作するサンプルです。   
 単純に追加するだけなので、難易度は少し低下するでしょう。
 
