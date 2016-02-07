@@ -1,0 +1,11 @@
+{
+    "type": "MOD_INFO",
+    "mod-type": "SUPPLEMENTAL",
+    "ident": "yk_stats_through_skills_with_arcana",
+    "name": "StatsThroughSkillsII_yk with Arcana",
+    "author": "Yue Kaburagi",
+    "description": "StatsThroughSkillsII_ykが参照する技能を追加するサンプルです。",
+    "category": "rebalance",
+    "path": "",
+    "dependencies": ["yk_stats_through_skills", "Arcana"]
+}
